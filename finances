@@ -1,0 +1,2 @@
+select teacher
+from table
