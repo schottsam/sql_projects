@@ -119,6 +119,21 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/14/09 11:19','Recliner',800,'Visa','Jennifer','Jumeira','Dubayy','United Arab Emirates','1/14/09 10:44','1/14/09 21:26',25.2097222,55.2477778);
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/13/09 19:39','Recliner',800,'Visa','Jolene','Englewood','CO','United states','1/6/09 22:00','1/14/09 22:02',39.64778,-104.98722);
 
+sales100 rows
+ID (PK)INTEGER
+transaction_dateTEXT
+productTEXT
+priceINTEGER
+payment_typeTEXT
+nameTEXT
+cityTEXT
+stateTEXT
+countryTEXT
+account_createdTEXT
+last_loginTEXT
+latitudeREAL
+longitude
+
 select count(product) AS Total_Transactions
 from sales;
 
