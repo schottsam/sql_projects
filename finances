@@ -170,3 +170,58 @@ from sales
 where state='TX'
 and product ='Chair'
 group by name;
+
+QUERY RESULTS
+Total_Transactions
+100
+
+Total_Chairs_Sold
+78
+
+Total_Beds_Sold
+5
+
+Total_Couches_Sold
+12
+
+Total_Recliners_Sold
+5
+
+Domestic_Sales
+48
+
+International_Sales
+52
+
+Average_Revenue_Per_Transaction_in_dollars
+1696
+
+Countries_Sold_To	Transactions
+United states	48
+Canada	11
+United Kingdom	10
+Australia	4
+Ireland	4
+Denmark	3
+Switzerland	3
+Netherlands	2
+Norway	2
+Belgium	1
+Finland	1
+France	1
+Germany	1
+India	1
+Israel	1
+Italy	1
+Luxembourg	1
+Moldova	1
+South Africa	1
+Spain	1
+Sweden	1
+United Arab Emirates	1
+
+TX_Customers	Chairs_Bought
+Anneli	1
+Lisa	1
+Nicole	1
+Sean	1
