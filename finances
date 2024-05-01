@@ -141,3 +141,7 @@ where product = 'Recliner';
 select count(country) AS International_Sales
 from sales
 where NOT country = 'United states';
+
+select avg(price) AS Average_Revenue_Per_Transaction_in_dollars
+from sales;
+
