@@ -145,3 +145,7 @@ where NOT country = 'United states';
 select avg(price) AS Average_Revenue_Per_Transaction_in_dollars
 from sales;
 
+select country AS All_Countries_Sold_To
+from sales
+group by country;
+
