@@ -164,3 +164,9 @@ select country as Countries_Sold_To, count(country) AS Transactions
 from sales
 group by country
 order by transactions desc;
+
+select name as TX_Customers, count(product) as Chairs_Bought
+from sales
+where state='TX'
+and product ='Chair'
+group by name;
