@@ -136,5 +136,8 @@ where product = 'Couch';
 
 select count(product) AS Total_Recliners_Sold
 from sales
-where product = 'Recliner'
+where product = 'Recliner';
 
+select count(country) AS International_Sales
+from sales
+where NOT country = 'United states';
