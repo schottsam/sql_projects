@@ -43,3 +43,8 @@ INSERT INTO orders (customer_id, item, price)
 
  select Name, Email
  from customers;
+
+ select Name, Item
+ from customers
+ join orders on customers.id=customer_id
+ where item = "Iphone";
