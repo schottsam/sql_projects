@@ -48,3 +48,8 @@ INSERT INTO orders (customer_id, item, price)
  from customers
  join orders on customers.id=customer_id
  where item = "Iphone";
+
+select Name, Price
+from customers
+join orders on customers.id=customer_id
+where Price >300;
