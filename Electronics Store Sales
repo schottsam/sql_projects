@@ -53,3 +53,9 @@ select Name, Price
 from customers
 join orders on customers.id=customer_id
 where Price >300;
+
+select Name, count(item) as Items_Purchased
+from customers
+join orders on customers.id=customer_id
+group by name;
+
