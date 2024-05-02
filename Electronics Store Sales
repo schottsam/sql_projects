@@ -40,3 +40,6 @@ INSERT INTO orders (customer_id, item, price)
  from customers
  join orders on customers.id=customer_id
  group by name;
+
+ select Name, Email
+ from customers;
