@@ -1,0 +1,37 @@
+CREATE TABLE customers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    email TEXT);
+    
+INSERT INTO customers (name, email) VALUES ("Steven Lemon", "steven@byui.edu");
+INSERT INTO customers (name, email) VALUES ("Sam Schott", "schottsam32@gmail.com");
+INSERT INTO customers (name, email) VALUES ("Keegan Hammond", "keeganh@yahoo.com");
+INSERT INTO customers (name, email) VALUES ("Jonah Karren", "JonahK@byui.edu");
+INSERT INTO customers (name, email) VALUES ("Anna Finch", "Anna@gmail.com");
+Insert into customers (name, email) VALUES ("Brandon Davey", "Brandond@gmail.com");
+INSERT INTO customers (name, email) VALUES ("Walker Deshazer", "Walkerd@gmail.com");
+Insert into customers (name, email) VALUES ("Sam Attebury", "Sama@gmail.com");
+
+
+CREATE TABLE orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    customer_id INTEGER,
+    item TEXT,
+    price REAL);
+
+INSERT INTO orders (customer_id, item, price)
+    VALUES (1, "Ipod", 300.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (2, "Iphone", 400.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (3, "Ipad", 500.00);
+    INSERT INTO orders (customer_id, item, price)
+    VALUES (4, "Ipad", 500.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (5, "Iphone", 500.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (6, "Airpods", 200.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (7, "Ipod", 300.00);
+INSERT INTO orders (customer_id, item, price)
+    VALUES (8, "Airpods", 200.00);
