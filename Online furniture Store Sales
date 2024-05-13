@@ -134,37 +134,48 @@ last_loginTEXT
 latitudeREAL
 longitude
 
+#1. Show how many products were sold.
 select count(product) AS Total_Transactions
 from sales;
 
+#2. Show how many chairs were sold.
 select count(product) AS Total_Chairs_Sold
 from sales
 where product = 'Chair';
 
+#3. Show how many beds were sold.
 select count(product) AS Total_Beds_Sold
 from sales
 where product = 'Bed';
 
+#4. Show how many couches were sold.
 select count(product) AS Total_Couches_Sold
 from sales
 where product = 'Couch';
 
+#5. Show how many recliners were sold.
 select count(product) AS Total_Recliners_Sold
 from sales
 where product = 'Recliner';
 
+#6. Show how many products were sold ordered outside of the U.S.
 select count(country) AS International_Sales
 from sales
 where NOT country = 'United states';
 
+#7. Show the avereage transaction's revenue.
 select avg(price) AS Average_Revenue_Per_Transaction_in_dollars
 from sales;
 
+#8. Show all countries the store sold to, grouped by country 
+and ordered by lowest amount spent to the highest amount.
 select country as Countries_Sold_To, count(country) AS Transactions
 from sales
 group by country
 order by transactions desc;
 
+#9. Show all customers that bought from Texas,
+and how many chairs they bought.
 select name as TX_Customers, count(product) as Chairs_Bought
 from sales
 where state='TX'
