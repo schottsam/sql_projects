@@ -69,3 +69,15 @@ select Name, count(item) as Items_Purchased
 from customers
 join orders on customers.id=customer_id
 group by name;
+
+# How this can help a buisness out.
+I created a table with names and emails that customers provided. I also created 
+another table that shows what their customer ID is, what they purchased, and
+how much they spent. I joined these tables toghether into one table to simiplify 
+the process and show diffrent things such customers with their name listed,
+email listed, and what they purchased and for how much to make it easier to see.
+I also specified the querey to show all customers who only bought a specific
+item, in this example it was an Iphone. I also used two different queries
+to show the name of customers and how much total they spent who only spent below
+a certain amount, as well as another query that showed the name of the customer
+and how many items they ordered. 
