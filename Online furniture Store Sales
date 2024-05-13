@@ -236,3 +236,11 @@ Anneli	           1
 Lisa	             1
 Nicole	           1
 Sean	             1
+
+# This helps a buisness out because it really queries the data out and sorts it well.
+I was able to show how many total products were sold, and how much of each specfic
+product the store was able to sell as well. I made it more specific, and showed
+how many orders were domestic and how many were international as well. 
+I showed the average transaction's revenue, and also showed orders 
+only from a specific state and that had a specific order. These are great
+ways to filter out data with SQL. 
